@@ -77,19 +77,47 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "MCR Pure — Professional Cleaning Services in Manchester" },
+      {
+        name: "description",
+        content:
+          "Trusted, insured cleaning services in Manchester. House, office & deep cleaning with same-day availability. Free quotes — call 0161 123 4567.",
+      },
+      { name: "author", content: "MCR Pure Cleaning" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "MCR Pure Cleaning" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "MCR Pure Cleaning",
+          image: "",
+          telephone: "+44 161 123 4567",
+          email: "hello@mcrpure.co.uk",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Deansgate",
+            addressLocality: "Manchester",
+            postalCode: "M3 2BA",
+            addressCountry: "GB",
+          },
+          areaServed: "Manchester, Salford, Stockport, Trafford",
+          priceRange: "££",
+          openingHours: "Mo-Sa 07:00-20:00",
+        }),
       },
     ],
   }),
@@ -118,7 +146,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
   );
