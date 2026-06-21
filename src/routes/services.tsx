@@ -25,7 +25,7 @@ const services = [
   { icon: Hammer, name: "Post-Construction", desc: "Builders' clean to remove dust, debris and protective film after renovations." },
   { icon: Truck, name: "Move-In / Move-Out", desc: "End-of-tenancy cleaning with deposit-back guarantee." },
   { icon: Sofa, name: "Sofa & Carpet Cleaning", desc: "Professional hot-water extraction for upholstery, rugs and carpets." },
-  { icon: Stairs, name: "Staircase & Communal Areas", desc: "Recurring cleaning for blocks of flats, HMOs and commercial buildings." },
+  { icon: Building, name: "Staircase & Communal Areas", desc: "Recurring cleaning for blocks of flats, HMOs and commercial buildings." },
 ];
 
 function ServicesPage() {
