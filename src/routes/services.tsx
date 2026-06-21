@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Home, Building2, Sparkles, Hammer, Truck, Sofa, Stairs, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Home, Building2, Sparkles, Hammer, Truck, Sofa, Building, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { CtaBand } from "@/components/site/CtaBand";
 
