@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "MCR Pure Cleaning" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "MCR Pure — Professional Cleaning Services in Manchester" },
+      { name: "twitter:title", content: "MCR Pure — Professional Cleaning Services in Manchester" },
+      { name: "description", content: "Manchester Shine is a professional cleaning company website designed to generate leads and bookings." },
+      { property: "og:description", content: "Manchester Shine is a professional cleaning company website designed to generate leads and bookings." },
+      { name: "twitter:description", content: "Manchester Shine is a professional cleaning company website designed to generate leads and bookings." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e55f5b79-9eec-421a-8e83-d6ba7fce7388/id-preview-a0bd4843--05eacd14-9841-4f55-891a-776fd3016c3a.lovable.app-1782066573426.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e55f5b79-9eec-421a-8e83-d6ba7fce7388/id-preview-a0bd4843--05eacd14-9841-4f55-891a-776fd3016c3a.lovable.app-1782066573426.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
